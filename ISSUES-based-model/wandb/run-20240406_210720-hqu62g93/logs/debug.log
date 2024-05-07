@@ -1,0 +1,29 @@
+2024-04-06 21:07:20,246 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-06 21:07:20,247 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Configure stats pid to 29657
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Loading settings from /content/drive/MyDrive/ISSUES/wandb/settings
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'src/main.py', 'program_abspath': '/content/drive/MyDrive/ISSUES/src/main.py', 'program': '/content/drive/MyDrive/ISSUES/src/main.py'}
+2024-04-06 21:07:20,248 INFO    MainThread:29657 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-06 21:07:20,249 INFO    MainThread:29657 [wandb_init.py:_log_setup():521] Logging user logs to ./wandb/run-20240406_210720-hqu62g93/logs/debug.log
+2024-04-06 21:07:20,249 INFO    MainThread:29657 [wandb_init.py:_log_setup():522] Logging internal logs to ./wandb/run-20240406_210720-hqu62g93/logs/debug-internal.log
+2024-04-06 21:07:20,249 INFO    MainThread:29657 [wandb_init.py:init():561] calling init triggers
+2024-04-06 21:07:20,249 INFO    MainThread:29657 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'dataset': 'harmeme', 'image_size': 224, 'num_mapping_layers': 1, 'map_dim': 768, 'fusion': 'align', 'num_pre_output_layers': 3, 'drop_probs': [0.2, 0.4, 0.1], 'gpus': [0], 'limit_train_batches': 1.0, 'limit_val_batches': 1.0, 'max_steps': -1, 'max_epochs': 60, 'log_every_n_steps': 25, 'val_check_interval': 1.0, 'batch_size': 64, 'lr': 1.3e-05, 'weight_decay': 0.0001, 'gradient_clip_val': 0.1, 'proj_map': False, 'pretrained_proj_weights': True, 'freeze_proj_layers': True, 'comb_proj': True, 'comb_fusion': 'align', 'convex_tensor': False, 'text_inv_proj': True, 'phi_inv_proj': True, 'post_inv_proj': True, 'enh_text': True, 'phi_freeze': True, 'name': 'text-inv-comb', 'pretrained_model': 'harmeme_text-inv-comb_best.ckpt', 'reproduce': True, 'print_model': False, 'fast_process': True}
+2024-04-06 21:07:20,250 INFO    MainThread:29657 [wandb_init.py:init():611] starting backend
+2024-04-06 21:07:20,250 INFO    MainThread:29657 [wandb_init.py:init():615] setting up manager
+2024-04-06 21:07:20,254 INFO    MainThread:29657 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-06 21:07:20,256 INFO    MainThread:29657 [wandb_init.py:init():623] backend started and connected
+2024-04-06 21:07:20,262 INFO    MainThread:29657 [wandb_init.py:init():715] updated telemetry
+2024-04-06 21:07:20,337 INFO    MainThread:29657 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-06 21:07:20,950 INFO    MainThread:29657 [wandb_run.py:_on_init():2357] communicating current version
+2024-04-06 21:07:21,070 INFO    MainThread:29657 [wandb_run.py:_on_init():2366] got version response 
+2024-04-06 21:07:21,071 INFO    MainThread:29657 [wandb_init.py:init():799] starting run threads in backend
+2024-04-06 21:07:21,615 INFO    MainThread:29657 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-06 21:07:21,617 INFO    MainThread:29657 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-06 21:07:21,619 INFO    MainThread:29657 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-06 21:07:21,620 INFO    MainThread:29657 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-06 21:07:21,622 INFO    MainThread:29657 [wandb_init.py:init():842] run started, returning control to user process
+2024-04-06 21:07:21,628 INFO    MainThread:29657 [wandb_run.py:_config_callback():1347] config_cb None None {'param_text_map.proj.0.weight': 589824, 'param_text_map.proj.0.bias': 768, 'param_comb.comb_image_proj.0.weight': 1179648, 'param_comb.comb_image_proj.0.bias': 1536, 'param_comb.comb_text_proj.0.weight': 1179648, 'param_comb.comb_text_proj.0.bias': 1536, 'param_comb.comb_shared_branch.0.weight': 4718592, 'param_comb.comb_shared_branch.0.bias': 3072, 'param_comb.comb_shared_branch.3.weight': 3072, 'param_comb.comb_shared_branch.3.bias': 1, 'param_comb.comb_concat_branch.0.weight': 4718592, 'param_comb.comb_concat_branch.0.bias': 3072, 'param_comb.comb_concat_branch.3.weight': 2359296, 'param_comb.comb_concat_branch.3.bias': 768, 'param_text_inv.phi_map.0.weight': 589824, 'param_text_inv.phi_map.0.bias': 768, 'param_text_inv.post_inversion_map.0.weight': 589824, 'param_text_inv.post_inversion_map.0.bias': 768, 'param_pre_output.1.weight': 589824, 'param_pre_output.1.bias': 768, 'param_pre_output.4.weight': 589824, 'param_pre_output.4.bias': 768, 'param_pre_output.7.weight': 589824, 'param_pre_output.7.bias': 768, 'param_output.weight': 768, 'param_output.bias': 1}
+2024-04-06 21:07:35,167 WARNING MsgRouterThr:29657 [router.py:message_loop():77] message_loop has been closed

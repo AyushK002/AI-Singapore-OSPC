@@ -1,0 +1,25 @@
+python3 src/main.py \
+    --dataset 'mcc_run'\
+    --num_mapping_layers 1 \
+    --map_dim 768 \
+    --fusion align \
+    --num_pre_output_layers 3 \
+    --drop_probs 0.2 0.4 0.1 \
+    --gpus '0' \
+    --batch_size 20 \
+    --lr 0.0001 \
+    --max_epochs 60 \
+    --name 'text-inv-comb' \
+    --pretrained_model 'text-inv-comb_Singapore_defense-frozen_comb.ckpt' \
+    --reproduce t \
+    --pretrained_proj_weights t \
+    --freeze_proj_layers t \
+    --comb_proj t \
+    --comb_fusion align \
+    --convex_tensor f \
+    --phi_inv_proj t \
+    --text_inv_proj t \
+    --post_inv_proj t \
+    --enh_text t \
+    --phi_freeze t \
+    --fast_process f \

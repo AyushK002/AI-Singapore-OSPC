@@ -1,0 +1,30 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+pytorch-lightning==1.9.3
+ftfy==5.8
+regex==2022.7.9
+tqdm==4.64.1
+pandas==1.5.3
+numpy==1.23.5
+git+https://github.com/openai/CLIP.git
+#numpy
+opencv-contrib-python-headless
+pytesseract
+easyocr
+tensorflow_text
+#PIL 
+tensorflow
+tensorflow_hub
+#tensorflow.keras.preprocessing.image 
+tensorflow_text
+#shutil
+#numpy
+#os
+#json
+#sys
+#random
+bs4
+pytesseract
+#re
+#functools

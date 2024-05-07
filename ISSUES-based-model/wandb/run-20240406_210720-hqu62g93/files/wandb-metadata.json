@@ -1,0 +1,109 @@
+{
+    "os": "Linux-6.1.58+-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-04-06T21:07:21.106098",
+    "startedAt": "2024-04-06T21:07:20.196576",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset",
+        "harmeme",
+        "--num_mapping_layers",
+        "1",
+        "--map_dim",
+        "768",
+        "--fusion",
+        "align",
+        "--num_pre_output_layers",
+        "3",
+        "--drop_probs",
+        "0.2",
+        "0.4",
+        "0.1",
+        "--gpus",
+        "0",
+        "--batch_size",
+        "64",
+        "--lr",
+        "0.000013",
+        "--max_epochs",
+        "60",
+        "--name",
+        "text-inv-comb",
+        "--pretrained_model",
+        "harmeme_text-inv-comb_best.ckpt",
+        "--reproduce",
+        "t",
+        "--pretrained_proj_weights",
+        "t",
+        "--freeze_proj_layers",
+        "t",
+        "--comb_proj",
+        "t",
+        "--comb_fusion",
+        "align",
+        "--convex_tensor",
+        "f",
+        "--phi_inv_proj",
+        "t",
+        "--text_inv_proj",
+        "t",
+        "--post_inv_proj",
+        "t",
+        "--enh_text",
+        "t",
+        "--phi_freeze",
+        "t",
+        "--fast_process",
+        "t"
+    ],
+    "state": "running",
+    "program": "/content/drive/MyDrive/ISSUES/src/main.py",
+    "codePathLocal": "src/main.py",
+    "codePath": "src/main.py",
+    "git": {
+        "remote": "https://github.com/miccunifi/ISSUES.git",
+        "commit": "c2f4d9272f92ec188148e40d160a931d962d4f5f"
+    },
+    "email": null,
+    "root": "/content/drive/MyDrive/ISSUES",
+    "host": "0e5cc5245127",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2000.18,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.18,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2000.18,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 78.1898422241211,
+            "used": 31.838634490966797
+        }
+    },
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla T4",
+            "memory_total": 16106127360
+        }
+    ],
+    "memory": {
+        "total": 12.674789428710938
+    }
+}

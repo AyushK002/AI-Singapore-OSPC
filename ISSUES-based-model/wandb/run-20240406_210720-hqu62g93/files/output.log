@@ -1,0 +1,20 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+`Trainer(limit_train_batches=1.0)` was configured so 100% of the batches per epoch will be used..
+`Trainer(limit_val_batches=1.0)` was configured so 100% of the batches will be used..
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing DataLoader 0:   0% 0/3 [00:00<?, ?it/s]
+/usr/local/lib/python3.10/dist-packages/torchmetrics/utilities/prints.py:43: TorchMetricsUserWarning: You are trying to use a metric in deterministic mode on GPU that uses `torch.cumsum`, which is currently not supported. The tensor will be copied to the CPU memory to compute it and then copied back to GPU. Expect some slowdowns.
+
+Testing DataLoader 1: 100% 6/6 [00:01<00:00,  3.32it/s]
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃[1m        Test metric        [22m┃[1m       DataLoader 0        [22m┃[1m       DataLoader 1        [22m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│[36m       test/accuracy       [39m│[35m                           [39m│[35m    0.8163841962814331     [39m│
+│[36m        test/auroc         [39m│[35m                           [39m│[35m    0.9282917380332947     [39m│
+│[36m       val/accuracy        [39m│[35m     0.700564980506897     [39m│[35m                           [39m│
+│[36m         val/auroc         [39m│[35m    0.8901458382606506     [39m│[35m                           [39m│
+└───────────────────────────┴───────────────────────────┴───────────────────────────┘

@@ -1,0 +1,252 @@
+wandb_version: 1
+
+dataset:
+  desc: null
+  value: harmeme
+image_size:
+  desc: null
+  value: 224
+num_mapping_layers:
+  desc: null
+  value: 1
+map_dim:
+  desc: null
+  value: 768
+fusion:
+  desc: null
+  value: align
+num_pre_output_layers:
+  desc: null
+  value: 3
+drop_probs:
+  desc: null
+  value:
+  - 0.2
+  - 0.4
+  - 0.1
+gpus:
+  desc: null
+  value:
+  - 0
+limit_train_batches:
+  desc: null
+  value: 1.0
+limit_val_batches:
+  desc: null
+  value: 1.0
+max_steps:
+  desc: null
+  value: -1
+max_epochs:
+  desc: null
+  value: 60
+log_every_n_steps:
+  desc: null
+  value: 25
+val_check_interval:
+  desc: null
+  value: 1.0
+batch_size:
+  desc: null
+  value: 64
+lr:
+  desc: null
+  value: 1.3e-05
+weight_decay:
+  desc: null
+  value: 0.0001
+gradient_clip_val:
+  desc: null
+  value: 0.1
+proj_map:
+  desc: null
+  value: false
+pretrained_proj_weights:
+  desc: null
+  value: true
+freeze_proj_layers:
+  desc: null
+  value: true
+comb_proj:
+  desc: null
+  value: true
+comb_fusion:
+  desc: null
+  value: align
+convex_tensor:
+  desc: null
+  value: false
+text_inv_proj:
+  desc: null
+  value: true
+phi_inv_proj:
+  desc: null
+  value: true
+post_inv_proj:
+  desc: null
+  value: true
+enh_text:
+  desc: null
+  value: true
+phi_freeze:
+  desc: null
+  value: true
+name:
+  desc: null
+  value: text-inv-comb
+pretrained_model:
+  desc: null
+  value: harmeme_text-inv-comb_best.ckpt
+reproduce:
+  desc: null
+  value: true
+print_model:
+  desc: null
+  value: false
+fast_process:
+  desc: null
+  value: true
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.6
+    framework: huggingface
+    huggingface_version: 4.38.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1712437640.0
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 12
+      - 41
+      - 49
+      - 51
+      - 55
+      - 103
+      2:
+      - 1
+      - 9
+      - 11
+      - 12
+      - 41
+      - 49
+      - 51
+      - 55
+      - 103
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.6
+      6: 4.38.2
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: test/accuracy/dataloader_idx_1
+      5: 1
+      6:
+      - 1
+    - 1: test/auroc/dataloader_idx_1
+      5: 1
+      6:
+      - 1
+    - 1: val/accuracy/dataloader_idx_0
+      5: 1
+      6:
+      - 1
+    - 1: val/auroc/dataloader_idx_0
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+param_text_map.proj.0.weight:
+  desc: null
+  value: 589824
+param_text_map.proj.0.bias:
+  desc: null
+  value: 768
+param_comb.comb_image_proj.0.weight:
+  desc: null
+  value: 1179648
+param_comb.comb_image_proj.0.bias:
+  desc: null
+  value: 1536
+param_comb.comb_text_proj.0.weight:
+  desc: null
+  value: 1179648
+param_comb.comb_text_proj.0.bias:
+  desc: null
+  value: 1536
+param_comb.comb_shared_branch.0.weight:
+  desc: null
+  value: 4718592
+param_comb.comb_shared_branch.0.bias:
+  desc: null
+  value: 3072
+param_comb.comb_shared_branch.3.weight:
+  desc: null
+  value: 3072
+param_comb.comb_shared_branch.3.bias:
+  desc: null
+  value: 1
+param_comb.comb_concat_branch.0.weight:
+  desc: null
+  value: 4718592
+param_comb.comb_concat_branch.0.bias:
+  desc: null
+  value: 3072
+param_comb.comb_concat_branch.3.weight:
+  desc: null
+  value: 2359296
+param_comb.comb_concat_branch.3.bias:
+  desc: null
+  value: 768
+param_text_inv.phi_map.0.weight:
+  desc: null
+  value: 589824
+param_text_inv.phi_map.0.bias:
+  desc: null
+  value: 768
+param_text_inv.post_inversion_map.0.weight:
+  desc: null
+  value: 589824
+param_text_inv.post_inversion_map.0.bias:
+  desc: null
+  value: 768
+param_pre_output.1.weight:
+  desc: null
+  value: 589824
+param_pre_output.1.bias:
+  desc: null
+  value: 768
+param_pre_output.4.weight:
+  desc: null
+  value: 589824
+param_pre_output.4.bias:
+  desc: null
+  value: 768
+param_pre_output.7.weight:
+  desc: null
+  value: 589824
+param_pre_output.7.bias:
+  desc: null
+  value: 768
+param_output.weight:
+  desc: null
+  value: 768
+param_output.bias:
+  desc: null
+  value: 1

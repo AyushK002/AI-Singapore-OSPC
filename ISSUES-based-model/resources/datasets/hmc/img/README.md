@@ -1,0 +1,1 @@
+Place the memes from the [HMC dataset](https://hatefulmemeschallenge.com/) here

@@ -1,0 +1,1 @@
+{"test/accuracy/dataloader_idx_1": 0.8163841962814331, "test/auroc/dataloader_idx_1": 0.9282917380332947, "val/accuracy/dataloader_idx_0": 0.700564980506897, "val/auroc/dataloader_idx_0": 0.8901458382606506, "epoch": 0, "trainer/global_step": 0, "_timestamp": 1712437646.3767467, "_runtime": 6.120231628417969, "_step": 0, "_wandb": {"runtime": 6}}

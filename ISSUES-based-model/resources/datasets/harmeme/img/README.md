@@ -1,0 +1,1 @@
+Place the memes from the [HarMeme dataset](https://github.com/di-dimitrov/mmf/tree/master/data/datasets/memes/defaults/images) here
